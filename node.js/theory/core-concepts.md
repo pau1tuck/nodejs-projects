@@ -53,3 +53,37 @@
 26. **Testing and Mocking**: While not part of Node.js itself, libraries like Jest, Mocha, and Sinon are commonly used in the Node.js ecosystem for unit testing, integration testing, and mocking. They provide a way to ensure that your application is working as expected.
 
 27. **Environment Variables**: Node.js applications often use environment variables to configure different
+
+Garbage Collection: Like all JavaScript runtime, Node.js uses automatic garbage collection. Understanding how it works can be important for optimizing performance and resource usage, especially in large applications.
+
+Worker Threads: Node.js, traditionally single-threaded, now provides an experimental way to run JavaScript in parallel with the worker_threads module. Worker threads can perform CPU-intensive tasks without blocking the event loop.
+
+Dockerization: While not a Node.js concept per se, understanding how to containerize Node.js applications with Docker is an important skill for deploying and running Node.js code in a variety of environments.
+
+Microservices: Building Node.js applications in a microservices architecture involves breaking down your application into smaller, autonomous services that communicate with each other. This approach can increase the modularity and scalability of your application.
+
+Serverless Architectures and Functions as a Service (FaaS): Understanding how to deploy Node.js applications in a serverless context (like AWS Lambda, Azure Functions, Google Cloud Functions) can be critical for building modern, scalable applications.
+
+Websockets: Node.js can be used to build real-time applications using WebSockets for two-way communication between the client and server. Libraries like socket.io are often used to simplify working with WebSockets.
+
+Security: Understanding security principles and how to protect your Node.js applications from common threats (like SQL injection, Cross-Site Scripting, and Cross-Site Request Forgery) is crucial. This often involves using middleware libraries like helmet to secure Express apps.
+
+Authentication and Authorization: Implementing authentication (who are you) and authorization (what are you allowed to do) is a common requirement for many Node.js applications. This can involve libraries like passport, OAuth protocols, JWT tokens, and so on.
+
+Databases: Understanding how to use databases with Node.js, both SQL (like PostgreSQL or MySQL) and NoSQL (like MongoDB), is important for building applications that persist and query data. This involves understanding libraries like mongoose (for MongoDB) or sequelize (for SQL databases).
+
+Caching: Caching can greatly speed up your Node.js applications by storing the result of expensive function calls and reusing the cached result when the same inputs occur. This could involve using server-side in-memory stores like Redis, or client-side caching.
+
+Logging and Monitoring: Effective logging can help to debug and track the flow of your application, while monitoring can help to track the performance and identify any bottlenecks. Libraries like winston and morgan are popular for logging in Node.js applications.
+
+Graceful Shutdown: Ensuring your application shuts down gracefully in Node.js can be important for maintaining data integrity and service availability. This involves listening to signals like SIGTERM and SIGINT, and correctly closing servers and database connections.
+
+Dependency Management: Understanding semantic versioning, handling and updating project dependencies, and managing environment-specific dependencies are crucial for maintaining a healthy Node.js application.
+
+Coding Standards and Best Practices: Following a coding standard and best practices for Node.js development such as proper error handling, avoiding callback hell, and code modularity not only helps keep the code maintainable but also optimizes the performance of the application. Tools like ESLint or Prettier can help enforce consistent coding styles.
+
+Web Frameworks: Besides Express.js, knowing other web frameworks like Hapi.js, Koa.js, Sails.js can give you more tools to build specific types of web applications.
+
+API Design: Whether it's RESTful APIs, GraphQL, or gRPC, knowing how to design, implement, version, and document APIs in Node.js is a valuable skill.
+
+TypeScript: TypeScript is a popular statically-typed superset of JavaScript that can help catch errors before runtime, enhance code readability, and improve development experience with better autocompletion, type checking, and more. It's increasingly being used in Node.js applications.
