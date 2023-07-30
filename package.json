@@ -19,6 +19,8 @@
     "express-session": "^1.17.3",
     "jsonwebtoken": "^9.0.1",
     "mongoose": "^7.4.1",
+    "passport": "^0.6.0",
+    "passport-local": "^1.0.0",
     "pg": "^8.11.1",
     "uuid": "^9.0.0",
     "xml2js": "^0.6.2"
@@ -29,6 +31,8 @@
     "@types/express-session": "^1.17.7",
     "@types/jsonwebtoken": "^9.0.2",
     "@types/node": "^20.4.5",
+    "@types/passport": "^1.0.12",
+    "@types/passport-local": "^1.0.35",
     "@types/pg": "^8.10.2",
     "@types/uuid": "^9.0.2"
   }
