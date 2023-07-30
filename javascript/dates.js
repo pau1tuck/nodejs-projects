@@ -1,3 +1,5 @@
+/*** JAVASCRIPT Date() OBJECT */
+
 let date = new Date(); // e.g. 2023-07-13T12:30:00.000Z
 
 let yy = date.getFullYear();
