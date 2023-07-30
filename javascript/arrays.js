@@ -33,7 +33,7 @@ array.forEach(number => {
 let array = [1, 2, 3];
 
 .includes(5); // true
-indexOf(2); // 1 (whereis 2?) else -1
+.indexOf(2); // (i.e. whereis no.2?) else -1
 .join(); // "1,2,3" (string)
 .join(" "); // "1 2 3"
 .map(person, i => `${i}: GBP ${person.salary * 0.8}`); // (current_value, index => f)
