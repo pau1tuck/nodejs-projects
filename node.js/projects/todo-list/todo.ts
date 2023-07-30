@@ -1,15 +1,64 @@
-/*** Introduction:
-The task is to build a simple Todo List application using Node.js. The app should allow users to create, delete, and mark completed tasks in their todo list.
+/*** TODO LIST APPLICATION
+The task is to build a simple Todo List application using Node.js. The app should allow users to create, delete, and mark completed tasks in their todo list. ***/
 
-API Endpoints:
-Design the following endpoints for your Todo List API:
+import express, { Request, Response } from 'express';
+import { v4 as uuidv4 } from 'uuid';
 
-POST /api/todos: Create a new todo item. The request body should include the title and description of the todo.
+interface Todo {
+    id: string;
+    title: string;
+    description: string;
+    completed: boolean;
+}
 
-GET /api/todos: Retrieve a list of all todos, including both pending and completed ones.
+let todos: Todo[] = []; // Store
 
-GET /api/todos/:id: Retrieve a specific todo by its unique identifier id.
+const app = express();
 
-PUT /api/todos/:id/complete: Mark a todo as completed. Use the id parameter to identify the todo.
+app.use(express.json());
 
-DELETE /api/todos/:id: Delete a todo item using its unique identifier id. ***/
+app.use(express.urlencoded({ extended: true })); // for parsing application/x-www-form-urlencoded
+
+app.set('view engine', 'ejs');
+
+/*** ROUTING ***/
+
+// CREATE
+app.post('/api/todos', (req: Request, res: Response) => {
+    const todo: Todo = {
+        id: uuidv4(),
+        title: req.body.title,
+        description: req.body.description,
+        completed: false,
+    };
+
+    todos.push(todo);
+    res.redirect('/'); // redirect back to homepage which lists todos
+});
+
+// READ + RENDER
+app.get('/', (req: Request, res: Response) => {
+    res.render('todos', { todos: todos }); // render 'todos.ejs' passing the todos array
+});
+
+// UPDATE
+app.post('/api/todos/:id/complete', (req: Request, res: Response) => {
+    const todo = todos.find(t => t.id === req.params.id);
+    if (todo) {
+        todo.completed = true;
+    }
+    res.redirect('/'); // redirect back to homepage which lists todos
+});
+
+// DELETE
+app.post('/api/todos/:id/delete', (req: Request, res: Response) => {
+    const index = todos.findIndex(t => t.id === req.params.id);
+    if (index !== -1) {
+        todos.splice(index, 1);
+    }
+    res.redirect('/'); // redirect back to homepage which lists todos
+});
+
+// SERVER
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
