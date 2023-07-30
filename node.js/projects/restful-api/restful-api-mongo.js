@@ -1,7 +1,5 @@
-/*** Build an API that follows REST principles to handle CRUD (Create, Read, Update, Delete) operations on a user resource ***/
-
-const express = require("express");
-const mongoose = require("mongoose");
+import express, { Request, Response } from "express";
+import mongoose from "mongoose";
 
 // MONGODB DATABASE
 mongoose.connect("mongodb://localhost:27017/app", {
@@ -18,7 +16,13 @@ const userSchema = new mongoose.Schema({
 });
 
 // USER MODEL
-const User = mongoose.model("User", userSchema);
+interface IUser extends mongoose.Document {
+    name: string;
+    email: string;
+    password: string;
+}
+
+const User = mongoose.model < IUser > ("User", userSchema);
 
 // EXPRESS APP
 const app = express();
@@ -30,24 +34,41 @@ app.use(express.json());
 /***
  * CREATE
  ***/
-app.post("/register", async (req, res) => {
+app.post("/register", async (req: Request, res: Response) => {
     // Create a new instance of the User model:
-    const newUser = new User(req.body); // req.body contains the JSON data sent in the HTTP POST request.
+    const newUser = new User(req.body);
 
-    // Run an asynchronous operation that writes the new user to the database:
+    // Save new user to the database:
     await newUser.save();
 
     // Send newUser back in the response:
     res.send(newUser);
-    // This enables the client to receive the full user object back from the database, including any default values, unique IDs, or timestamps that were added upon saving to the database.
 });
 
 /***
  * READ
  ***/
+app.get("/users/:id", async (req: Request, res: Response) => {
+    const user = await User.findById(req.params.id);
+    res.send(user);
+});
 
-// UPDATE
+/***
+ * UPDATE
+ ***/
+app.put("/users/:id", async (req: Request, res: Response) => {
+    const updatedUser = await User.findByIdAndUpdate(req.params.id, req.body, { new: true });
+    res.send(updatedUser);
+});
 
-// DELETE
+/***
+ * DELETE
+ ***/
+app.delete("/users/:id", async (req: Request, res: Response) => {
+    const user = await User.findByIdAndRemove(req.params.id);
+    res.send(user);
+});
 
 // SERVER
+const port = 3000;
+app.listen(port, () => console.log(`Server running on port ${port}`));

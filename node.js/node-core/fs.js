@@ -20,6 +20,11 @@ fs.readFile(filepath, "utf8", (err, contents) => {
 	fs.writeFile(filepath, contents.toUpperCase(), (err) => {
 		if (err) throw err; }
     });
+	fs.appendFile(logFilePath, `${JSON.stringify(errorDetails)}\n`, "utf-8", (error) => {
+		if (error) {
+			console.error("Failed to write to log file:", error);
+		}
+	});
 
 // SYNCHRONOUS
 const filedata = fs.readFileSync(filepath, "utf8");

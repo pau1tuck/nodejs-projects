@@ -6,11 +6,10 @@ const jwt = require("jsonwebtoken");
 const session = require("express-session");
 
 // MONGODB DATABASE
-mongoose.connect("mongodb://localhost:27017/userAPI", {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-    useFindAndModify: false,
-});
+mongoose
+    .connect("mongodb://localhost:27017/userAPI")
+    .then(() => console.log("Database connected!"))
+    .catch(err => console.log("Could not connect to database:", err));
 
 // USER DOCUMENT SCHEMA
 const userSchema = new mongoose.Schema({
@@ -41,9 +40,9 @@ app.use(
 // REGISTER
 app.post("/register", async (req, res) => {
     try {
-        const hashedPassword = await bcrypt.hash(req.body.password, 10); // Hash password
+        const hashedPassword = await bcrypt.hash(req.body.password, 10);
         const newUser = new User({ name: req.body.name, email: req.body.email, password: hashedPassword });
-        await newUser.save(); // Save user to database
+        await newUser.save();
         res.status(201).send(newUser);
     } catch {
         res.status(500).send();

@@ -1,5 +1,4 @@
 import express from 'express';
-import { json } from 'body-parser';
 import { Pool } from 'pg';
 
 // POSTGRESQL DATABASE
@@ -50,7 +49,7 @@ const userService = new UserService();
 // EXPRESS APP
 const app = express();
 // JSON PARSING
-app.use(json());
+app.use(express.json());
 
 /*** Route Handlers ***/
 // CREATE
