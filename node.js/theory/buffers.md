@@ -16,8 +16,6 @@ In Node, a Buffer is like a special box used to hold and work with binary data, 
 
 ---
 
-## What are Buffers?
-
 Buffers in Node were introduced as a way to work with binary streams of data. In computing, a buffer is a region of physical memory storage used to temporarily store data while it is being moved from one place to another.
 
 In Node, a buffer is a global object that provides a way to work with different kinds of binary data. Binary data, such as images, audio files, or a variety of encoded information, isn't natively supported by JavaScript. But in a runtime like Node, such operations are common, especially since Node is frequently used for reading and writing to the filesystem or the network where interaction with binary data is inevitable.
