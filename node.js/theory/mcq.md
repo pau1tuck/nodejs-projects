@@ -4,7 +4,11 @@
 
 ### What is Node.js?
 
-### What are the main features of Node.js?
+    Node.js is an open source project designed to help you write JavaScript programs that talk to networks, file systems or other I/O (input/output, reading/writing) sources.
+
+### What are the its main features?
+
+### What is meant by I/O? Give examples
 
 Callbacks, non-blocking I/O
 
