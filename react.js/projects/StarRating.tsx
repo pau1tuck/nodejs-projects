@@ -6,10 +6,12 @@ const createArray = (length: number) =>
     [...Array(length)].map(() => 0); // [0,0,0,0,0]
 
 const Star = ({ selected = false, onSelect }) => {
-    <FaStar
-        color={selected ? "yellow" : "gray"}
-        onClick={onSelect}
-    />;
+    return (
+        <FaStar
+            color={selected ? "yellow" : "gray"}
+            onClick={onSelect}
+        />
+    );
 };
 
 const StarRating = ({ totalStars = 5 }: { totalStars: number }) => {
@@ -24,7 +26,7 @@ const StarRating = ({ totalStars = 5 }: { totalStars: number }) => {
                     <Star
                         key={index}
                         selected={selectedStars > index}
-                        onSelect={() => index + 1}
+                        onSelect={() => setSelectedStars(index + 1)}
                     />
                 ),
             )}
@@ -39,7 +41,9 @@ const App = () => {
     return <StarRating totalStars={5} />;
 };
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
+const root = ReactDOM.createRoot(
+    document.getElementById("root") as HTMLElement,
+);
 root.render(
     <React.StrictMode>
         <App />
