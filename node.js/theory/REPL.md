@@ -17,14 +17,7 @@ The REPL performs several tasks:
 
 ## Launching the REPL
 
-You can start a REPL session in Node.js by simply typing `node` without any arguments in the command line or terminal:
-
-```
-$ node
->
-```
-
-This will present you with a `>` prompt where you can start typing in JavaScript code, and it will be executed line by line.
+You can start a REPL session in Node.js by simply typing `node` without any arguments in the command line or terminal. This will present you with a `>` prompt where you can start typing in JavaScript code, and it will be executed line by line.
 
 ## Basic Use of REPL
 

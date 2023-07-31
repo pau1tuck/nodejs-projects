@@ -23,7 +23,7 @@ function fetchData() {
 
 function processData(data) {
   return new Promise((resolve, reject) => {
-    setTimeout(() => resolve(`${data} and processed`), 500);
+    setTimeout(() => resolve(`${data} and procesed`), 500);
   });
 }
 
