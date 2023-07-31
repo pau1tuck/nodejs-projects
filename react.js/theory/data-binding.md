@@ -1,8 +1,8 @@
-# Data Binding in React
+# Unidirectional Data Binding
 
 Data binding is essentially a way that helps us create a link or connection between our application's interface and the underlying data. In other words, it's how your application's data gets displayed in the user interface (UI) and how user interactions in the UI can update that data. Think of it as a bridge that allows two-way traffic between your code and what the user sees and interacts with.
 
-## Unidirectional Data Flow
+## Data Flow
 
 React uses a principle called "unidirectional data flow" or "one-way data binding". This might sound complicated, but it's really quite simple. In traditional two-way data binding, changes in the UI immediately reflect in the model, and changes in the model instantly reflect in the UI. However, React's one-way data flow keeps it straightforward: changes in the model (your code) reflect in the UI, but not the other way around. It's like a one-way street, where the data can only move in one direction.
 
@@ -25,5 +25,3 @@ Let's say you have a button in your UI and you want to track how many times it g
 React then sees the state has changed, and re-renders the component (and potentially child components) with the updated state. This re-render updates the UI to reflect the new state, completing the cycle.
 
 And there you have it! That's a high-level overview of data binding in React. It's the mechanism that makes your React apps dynamic and interactive. React's unidirectional data flow may seem restrictive at first, but it's a powerful pattern that makes your code more predictable and easier to debug. So as you continue your journey with React, always keep this pattern in mind.
-
-Next time, we'll dive deeper into how to manage complex state and props relationships across multiple components.
