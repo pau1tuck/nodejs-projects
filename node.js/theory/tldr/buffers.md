@@ -4,7 +4,7 @@ Node introduces several functionalities not available in client-side JavaScript.
 
 ---
 
-## Simple TL;DR
+## TL;DR
 
 In Node, a Buffer is like a special box used to hold and work with binary data, the type of info in images or audio files. You create a Buffer using Buffer.from() and it grabs some memory to work with that doesn't change in size later. Buffers have functions that let you read and write data, like changing a Buffer's content back into a string using buf.toString(). Understanding Buffers is a key part of getting good with Node as they're used a lot for things like handling images or reading and writing files.
 

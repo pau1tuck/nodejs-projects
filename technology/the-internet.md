@@ -1,4 +1,4 @@
-# How Does the Internet Work?
+# How The Internet Works
 
 ## Introduction
 

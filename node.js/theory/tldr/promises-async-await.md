@@ -2,7 +2,7 @@
 
 JavaScript, as a language, is well-known for its asynchronicity which means that if any action takes a while, your program can continue doing other things while the action completes, and once the action is completed, you can do something with the result. The asynchronicity feature is highly beneficial in scenarios such as data fetching, although it can be quite challenging to comprehend for beginners. JavaScript provides several ways to handle asynchronous programming, among which are callback functions, Promises, and async-await.
 
-## Simple TL;DR
+## TL;DR
 
 Let's tackle this as if it were a fun video game adventure.
 

@@ -4,7 +4,7 @@ Caching is a powerful technique used to improve the performance and efficiency o
 
 ---
 
-## Simple TL;DR
+## TL;DR
 
 Caching in Node.js is like keeping a favorite toy close by so you don't have to go searching for it every time you want to play. It helps your web applications to work faster and more efficiently by remembering and quickly accessing information that's used a lot. This can help your app to respond more quickly, lighten the load on your server, and make things run more smoothly for the user.
 

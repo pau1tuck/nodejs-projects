@@ -4,7 +4,7 @@ The event loop is an essential part of Node.js, enabling it to perform non-block
 
 ---
 
-## Simple TL;DR
+## TL;DR
 
 The event loop in Node.js is like a magical circle that keeps your app running smoothly, even when it's doing a lot of things at once. It's the secret sauce that lets Node.js handle many tasks without slowing down.
 

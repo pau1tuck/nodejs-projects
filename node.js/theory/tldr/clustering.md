@@ -4,7 +4,7 @@ Sure, both articles focus on the concept of clustering and the cluster module in
 
 ---
 
-## Simple TL;DR
+## TL;DR
 
 Node.js clustering is like having a team of workers, each doing their own thing on their own computer (CPU core), to handle requests coming into your app. This makes your app faster and more efficient.
 
