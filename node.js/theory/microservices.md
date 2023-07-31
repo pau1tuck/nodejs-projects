@@ -1,4 +1,4 @@
-# Introduction to Microservices in the Context of Node.js
+# Introduction to Microservices Architecture in the Context of Node.js
 
 Microservices architecture is a modern and powerful approach to building scalable, modular, and maintainable applications. In this introduction, we will explore the fundamental concepts of microservices, understand how they differ from traditional monolithic architectures, and examine how Node.js can be leveraged to implement microservices-based systems.
 
