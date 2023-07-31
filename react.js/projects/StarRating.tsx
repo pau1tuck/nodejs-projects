@@ -20,8 +20,9 @@ const StarRating = ({ totalStars = 5 }: { totalStars: number }) => {
         <>
             {createArray(totalStars).map(
                 (
+                    // Be careful with bracket syntax!
                     star,
-                    index, // Be careful!
+                    index,
                 ) => (
                     <Star
                         key={index}
