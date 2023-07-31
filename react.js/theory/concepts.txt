@@ -3,7 +3,7 @@ Components
 Element vs Component
 Class vs Functional
 Pure Component
-Data Binding, Virtual DOM
+__Data Binding, Virtual DOM
 
 3. Rendering
 4. Virtual DOM

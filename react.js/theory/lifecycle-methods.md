@@ -62,6 +62,14 @@ class Timer extends Component {
 export default Timer;
 ```
 
+In the code above, you can observe the following:
+
+- In the constructor, we initialize the state of the Timer component.
+- In the `componentDidMount` method, we set up an interval that increments the seconds in state every second.
+- In the `componentDidUpdate` method, we log a message each time the component updates, which is every time the state changes.
+- In the `componentWillUnmount` method, we clear the interval to prevent memory leaks when the Timer component is removed from the DOM.
+- The render method simply displays the current number of seconds that have passed since the timer started.
+
 ## Function Components
 
 In function components, the lifecycle methods are achieved using React hooks. The `useState` and `useEffect` hooks replicate the lifecycle behavior of class components.
@@ -81,4 +89,4 @@ useEffect(() => {
 
 Here, the `useEffect` hook replaces `componentDidMount`, `componentDidUpdate`, and `componentWillUnmount` from class components. If the dependency array is empty (`[]`), the code runs once similar to `componentDidMount`. If there is no second argument, the callback runs on every re-render similar to `componentDidUpdate`. If state variables are included in the dependency array, the callback runs when any of those variables change.
 
-While class components have a more explicit division of lifecycle phases and methods, function components with hooks achieve the same effect with less code and a flatter structure, which can be easier to understand and maintain. Nevertheless, understanding the lifecycle methods in class components remains vital for dealing with legacy codebases that use class components or to understand lifecycle concepts applicable to hooks as well. The choice between class and function components largely depends on project requirements, coding style preference, and team's familiarity with React.
+While class components have a more explicit division of lifecycle phases and methods, function components with hooks achieve the same effect with less code and a flatter structure, which can be easier to understand and maintain. Nevertheless, understanding the lifecycle methods in class components remains vital for dealing with legacy codebases that use class components or to understand lifecycle concepts applicable to hooks as well. The choice between class and function components largely depends on project requirements, coding style preference, and a team's familiarity with React.

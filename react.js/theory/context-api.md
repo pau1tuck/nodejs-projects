@@ -1,4 +1,4 @@
-# Context API in React
+# The Context API
 
 React is built around the idea of components that hold their own state and props. However, sometimes state needs to be shared between multiple components, potentially even ones nested deep in the component tree. Passing state via props from parent to child component, then to its child, and so on, quickly becomes cumbersome. This scenario is often referred to as "prop drilling". React provides a solution to this problem through its Context API.
 
@@ -6,7 +6,7 @@ React is built around the idea of components that hold their own state and props
 
 Before diving into the solution, let's establish a solid understanding of the problem. Imagine you have a large application where data needs to be passed through several layers of components. We know that one way to share data is via props, but doing this through multiple layers becomes hard to manage and results in bloated code. This method lacks efficiency and scalability.
 
-## What is Context API?
+## What is the Context API?
 
 The Context API, introduced in React 16.3, allows you to share data that can be considered "global" for a tree of React components. It is designed to share data that can be considered global for a tree of React components, such as the current authenticated user, theme, or language preference. This API consists of three main parts: `React.createContext`, `Context.Provider`, and `Context.Consumer`.
 
