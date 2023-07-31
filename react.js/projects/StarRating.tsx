@@ -5,7 +5,7 @@ import { FaStar } from "react-icons/fa";
 const createArray = (length: number) =>
     [...Array(length)].map(() => 0); // [0,0,0,0,0]
 
-const Star = ({ selected = false, onSelect }) => {
+const Star = ({ selected = false, onSelect }): JSX.Element => {
     return (
         <FaStar
             color={selected ? "yellow" : "gray"}
