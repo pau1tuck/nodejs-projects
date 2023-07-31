@@ -31,7 +31,9 @@ const app: Express = express();
 app.use(express.json());
 
 // PASSPORT CONFIGURATION
-app.use(session({ secret: "secret", resave: false, saveUninitialized: true }));
+app.use((session as any) ({
+    secret: "secret", resave: false, saveUninitialized: true
+}));
 app.use(passport.initialize());
 app.use(passport.session());
 
