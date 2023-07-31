@@ -1,12 +1,14 @@
+"Q: Var vs let vs const Q: Regular function vs function expression vs arrow function Q: Closures (+ short programming task around them) Q: What is CORS? Q: Usage of useEffect in react Q: Usage of useMemo in react Q: What is React.memo()? Q: Different ways of keeping state (local state, context, global state) Q: Nodejs event loop (eg. setTimeout) Q: Promises"
+
 JSX
 Components
 Element vs Component
 Class vs Functional
 Pure Component
 __Data Binding, Virtual DOM
+DOM vs Virtual DOM
 
 3. Rendering
-4. Virtual DOM
 5. State
 6. Props
 7. Functional Components

@@ -116,7 +116,8 @@ ReactDOM.render(<App />, document.getElementById('app'));
 
 In this class-based example, we're defining mount and unmount methods within our App component. The mount method uses ReactDOM.render() to render a Message component into a DOM node with the ID of 'root'. The unmount method uses ReactDOM.unmountComponentAtNode() to unmount the component at the 'root' node.
 
-```jsx
+```jsx\
+
 import React, { useState } from 'react';
 import ReactDOM from 'react-dom';
 
