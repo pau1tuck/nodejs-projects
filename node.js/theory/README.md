@@ -11,10 +11,14 @@
 - Asynchronous, Non-Blocking I/O
 - Callbacks
 
+## Asynchronous I/O
+
+- Understanding Promises with `async` and `await`
+
 ## Cluster
 
-- Cluster module
-- Cluster methods
+- Single-thread
+- Clustering
 
 ## Keywords
 
