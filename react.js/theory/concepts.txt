@@ -11,12 +11,12 @@ __Data Binding, Virtual DOM
 6. Props
 7. Functional Components
 8. Class Components
-9. Lifecycle Methods
+__9. Lifecycle Methods
 10. Hooks
 11. useState Hook
 12. useEffect Hook
-13. Context API
-14. React Router
+__13. Context API
+__14. React Router
 15. Conditional Rendering
 16. Lists and Keys
 17. Refs

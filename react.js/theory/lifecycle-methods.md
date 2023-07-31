@@ -1,4 +1,4 @@
-# Lifecycle Methods in React: Class and Function Components
+# Lifecycle Methods
 
 React provides a variety of lifecycle methods to track the lifecycle of components, allowing us to run code at particular points in time. In this essay, we will explore these methods for both class and function components.
 
