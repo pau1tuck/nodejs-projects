@@ -1,0 +1,8 @@
+# Features of Node.js
+
+- Easy Scalability: Node JS is built upon Chrome V8’s engine powered by Google. It allows Node to provide a server-side runtime environment that compiles and executes JavaScript at lightning speeds.
+- Real time web apps: Today the web has become much more about interaction. Users want to interact with each other in real-time. Chat, gaming, constant social media updates, collaboration tools, eCommerce websites, real-time tracking apps, marketplace- each of these features requires real-time communication between users, clients, and servers across the web.
+- Fast Suite: As we have discussed that NodeJS is highly scalable and lightweight that’s why it’s a heavy favorite for microservice architectures. In a nutshell, microservice architectures mean breaking down the application into isolated and independent services.
+- Easy to learn and code: No matter what language you are using for the backend application you’re gonna need JavaScript for front-end anyway so instead of spending your time learning a server-side language such as Php, Java or Ruby on Rails, you can spend all your efforts in learning JS and mastering in it.
+- Data Streaming: NodeJS comes to the rescue since it’s good at handling such an I/O process which allows users to transcode media files simultaneously while they are being uploaded. It takes less time compared to other data processing methods for processing data.
+- Corporate Support: It’s an independent community aimed at facilitating the development of NodeJS core tools. The foundation of NodeJS was formed to speed up the development of NodeJS, and it was intended to allow broad adoption of it.
