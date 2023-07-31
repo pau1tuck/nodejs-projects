@@ -26,6 +26,6 @@ The async-await syntax allows for cleaner and more readable code that operates w
 
 Even though both Promises and Async/Await end up accomplishing the same thing, handling asynchronous data calls in a performant, consistent manner, your choice between the two often depends on your specific use case and personal preference [[2](https://itnext.io/javascripts-async-await-versus-promise-the-great-debate-6308cb2e10b3)].
 
-# Conclusion
+## Conclusion
 
 Understanding Promises, Async/Await, and Callbacks is key to mastering asynchronous JavaScript. While callbacks were the traditional method of handling asynchronous JavaScript, the introduction of Promises and Async/Await have made writing and reading asynchronous JavaScript more manageable and intuitive. It's important to note that these aren't mutually exclusive or sequential improvements - rather, they are different tools available within the language, each suitable for different scenarios. A good grasp of these concepts will enable you to write efficient and clean JavaScript code, better equipped to handle complex tasks.
