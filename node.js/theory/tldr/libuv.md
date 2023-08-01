@@ -1,4 +1,4 @@
-# Understanding libuv in Node.js
+# Understanding `libuv` in Node.js
 
 Node.js is renowned for its non-blocking, event-driven architecture, which allows it to handle many concurrent connections with a single server. At the core of this efficiency lies a powerful library named `libuv` — a critical piece of the Node.js runtime. This article will explore what `libuv` is, how it works, and why it's a fundamental part of Node.js.
 
@@ -6,7 +6,7 @@ Node.js is renowned for its non-blocking, event-driven architecture, which allow
 
 `libuv` is a multi-platform support library originally developed for Node.js to abstract non-blocking I/O operations to a consistent interface across all operating systems. The name 'libuv' originates from the library's core purpose: "universal velocity".
 
-`libuv` provides mechanisms to handle file system, networking, and concurrency, among other things. It supports various operating systems, including Linux, Windows, Mac OS X, and other Unix systems. It is written in C and is an open-source project hosted on [GitHub](https://github.com/libuv/libuv).
+`libuv` provides mechanisms to handle file system, networking, and concurrency, among other things. It supports various operating systems, including Linux, Windows, Mac OS X, and other Unix systems. It is written in C and is an open-source project hosted on GitHub.
 
 ## Why is libuv Necessary?
 

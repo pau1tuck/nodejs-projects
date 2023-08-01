@@ -67,6 +67,6 @@ router.get('/about', (req, res) => {
 app.use('/', router);
 ```
 
-## Wrapping Up
+## Conclusion
 
 Routing in Node.js, though possible to manage manually, is generally handled using frameworks like Express.js, which offer a straightforward and powerful approach. Understanding routing is fundamental in web development, and having a solid grasp on how it works in Node.js with Express.js is essential to build robust, dynamic web applications. As a developer, it's beneficial to familiarize yourself with Express.js's routing capabilities, from basic route definition to advanced features like route parameters and the use of the `Router` class.

@@ -2,6 +2,20 @@
 
 JavaScript, the language that Node.js is built on, is known for its hands-off approach to memory management. It provides automatic garbage collection, freeing developers from the burden of manually allocating and deallocating memory. This system is convenient, but understanding how it works under the hood can lead to more efficient, high-performance Node.js applications. The TypeScript superset of JavaScript, while offering many enhancements, does not alter the underlying garbage collection process.
 
+---
+
+## OVERVIEW
+
+JavaScript, the foundation for Node.js, manages memory automatically using a method called garbage collection. TypeScript, a superset of JavaScript, introduces additional features but doesn't change how garbage collection works. Understanding this process can improve the performance of Node.js applications.
+
+- JavaScript uses a "mark-and-sweep" garbage collection approach. It marks reachable objects (ones that can be accessed from a root) and then removes any unmarked, unreachable objects. It's an automatic system that steps in when it decides memory cleanup is needed.
+- In Node.js, managing memory efficiently is vital to prevent crashes or slowdowns, especially as it often serves multiple clients simultaneously. Memory leaks can occur due to large objects, unintentional references, or circular references (where objects reference each other).
+- Developers can use several tools to identify memory leaks, such as the built-in Node.js inspector or external npm packages like memwatch-next and heapdump.
+- TypeScript adds static typing to JavaScript, which can help spot some errors that could cause memory leaks. However, as it's transpiled to JavaScript before running, it doesn't alter the garbage collection process, and memory leaks can still occur.
+- Even with automatic garbage collection, developers should be mindful of memory management, writing efficient code that minimizes memory leaks and maximizes garbage collector effectiveness.
+
+---
+
 ## Garbage Collection in JavaScript and Node.js
 
 JavaScript uses a form of garbage collection known as mark-and-sweep. This approach consists of two phases: the mark phase, where the garbage collector visits every reachable object, and the sweep phase, where it collects any objects that were not marked. The garbage collector operates in the background, stepping in when it determines that memory cleanup is necessary.

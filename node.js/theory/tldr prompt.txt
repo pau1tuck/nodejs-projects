@@ -1,0 +1,1 @@
+Please write a condensed version of this article in 3-4 sentences with 5 bullet points in .md format. Use language suitable for a 16-year-old GCSE student. Don't add any headings:

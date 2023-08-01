@@ -2,6 +2,20 @@
 
 Websockets are a key component of modern web development that enables real-time bidirectional communication between clients and servers. In this essay, we will explore the concept of Websockets, understand how they work, and examine their significance in Node.js applications.
 
+---
+
+## OVERVIEW
+
+Websockets in Node.js enable quick, two-way communication between a server and its clients, facilitating real-time updates. Instead of the HTTP request method which establishes a new connection for each interaction, Websockets keep a single connection open for as long as communication occurs. They work particularly well with Node.js due to its event-driven architecture which allows for efficient handling of multiple concurrent connections.
+
+* Websockets use the WebSocket protocol to create and maintain a persistent connection with the server, allowing continuous data exchange.
+* The protocol initiates with a handshake, and if successful, establishes the connection for bidirectional communication.
+* Websockets deliver real-time updates and, due to the persistent connection, quickly send data to clients, making them suitable for applications like chat apps, live dashboards, and so on.
+* The non-blocking nature of Node.js, combined with Websockets, permits applications to scale and manage a large number of simultaneous connections without significant resource consumption.
+* You can implement Websockets in Node.js using libraries like Socket.IO. This simplifies the process and provides additional features like automatic reconnection and room-based communication.
+
+---
+
 ## Understanding Websockets
 
 Traditional HTTP (HyperText Transfer Protocol) requests follow a request-response model, where the client sends a request to the server, and the server responds with the requested data. However, this model has limitations when it comes to real-time communication and data exchange between clients and servers.

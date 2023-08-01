@@ -58,6 +58,6 @@ Here's an example of using `.help`:
 Press Ctrl+C to abort current expression, Ctrl+D to exit the repl
 ```
 
-## Wrapping Up
+## Conclusion
 
 The Node.js REPL is a powerful tool for quickly testing JavaScript code, experimenting with Node.js, and debugging. It provides an interactive environment where you can write and execute JavaScript code line by line, and see the results immediately. Understanding and using REPL effectively can significantly enhance your productivity and efficiency in Node.js development.

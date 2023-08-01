@@ -2,6 +2,20 @@
 
 Microservices architecture is a modern and powerful approach to building scalable, modular, and maintainable applications. In this introduction, we will explore the fundamental concepts of microservices, understand how they differ from traditional monolithic architectures, and examine how Node.js can be leveraged to implement microservices-based systems.
 
+---
+
+## OVERVIEW
+
+Microservices architecture is a way to build applications where a larger application is broken down into smaller, independent services, each managing a specific task. This approach enables teams to work on different services simultaneously, promoting faster development cycles. Node.js, a popular JavaScript runtime, is a great tool for building microservices due to its non-blocking, event-driven architecture that allows it to handle numerous concurrent connections efficiently.
+
+- Modularity: Microservices are organized around specific functions, allowing teams to work on individual services without affecting the whole application.
+- Autonomy: Microservices have their own databases and codebases, can be deployed independently, offering more flexibility.
+- Resilience: In a microservices setup, if one service fails, it doesn't necessarily impact the whole system as services can recover independently.
+- Scalability: Microservices can be scaled horizontally, meaning services can be duplicated and deployed on multiple instances to manage increased workload.
+- Technology Diversity: Different microservices can be built using different technologies, giving developers the freedom to choose the best tech stack for each service.
+
+---
+
 ## Understanding Microservices
 
 Microservices architecture is a software development approach where a large application is decomposed into a collection of small, loosely coupled, and independent services. Each service, known as a microservice, is responsible for performing a specific business task and communicates with other services through well-defined APIs, usually over HTTP.
