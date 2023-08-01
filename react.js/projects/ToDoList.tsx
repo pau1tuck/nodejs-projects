@@ -5,7 +5,6 @@ interface TodoItemProps {
     title: string;
     completed: boolean;
     onToggle: (id: number) => void;
-    onEdit: (id: number) => void;
     onDelete: (id: number) => void;
 }
 /*** 1. SINGLE TODO ITEM ***/
@@ -14,10 +13,10 @@ const TodoItem: FunctionComponent<TodoItemProps> = ({
     title,
     completed,
     onToggle,
-    onEdit,
     onDelete,
 }) => {
     const [editMode, setEditMode] = useState(false);
+    const [editedTitle, setEditedTitle] = useState(title);
     return (
         <li>
             <input
@@ -25,11 +24,19 @@ const TodoItem: FunctionComponent<TodoItemProps> = ({
                 checked={completed}
                 onChange={() => onToggle(id)}
             />
-            <span className={completed ? "completed" : ""}>
-                {title}
-            </span>
-            <button onClick={() => onEdit(id)}>Edit</button>
-            <button onClick={() => onDelete(id)}>Delete</button>
+            {editMode ? (
+                <input
+                    type="text"
+                    value={editedTitle}
+                    onChange={e => setEditedTitle(e.target.value)}
+                />
+            ) : (
+                <span className={completed ? "completed" : ""}>
+                    {title}
+                </span>
+            )}
+            <button onClick={() => setEditMode(true)}>Edit</button>
+            <button onClick={() => onDelete(id)}>Delete</button>)
         </li>
     );
 };
