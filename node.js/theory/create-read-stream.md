@@ -1,4 +1,4 @@
-# Understanding the Difference between `readFile()` and `createReadStream()` in Node.js
+# Understanding the Difference between `readFile()` and `createReadStream()`
 
 Node.js provides various methods for reading data from files, two of the most commonly used ones being `readFile()` and `createReadStream()`. While both functions are used to read data from files, they have distinct differences in their underlying mechanisms and use cases. In this article, we will explore the dissimilarities between `readFile()` and `createReadStream()` and discuss why understanding these differences is crucial for efficient file handling in Node.js.
 
